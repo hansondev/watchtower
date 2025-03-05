@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
-      - 8080:8080
+      - 8081:8080
     command: --interval 86400 --http-api-metrics --http-api-token demotoken --debug prometheus grafana parent child
   prometheus:
     container_name: prometheus
